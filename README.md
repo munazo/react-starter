@@ -3,14 +3,19 @@
 React + Webpack + Babel
 
 ## Setup
- 
+
 ```
-npm install
+$ npm install
 ```
 
 ## Build
----
 
 ```
-npm run build
+$ npm run build
+```
+
+## Dev server
+
+```
+$ npm run dev
 ```
