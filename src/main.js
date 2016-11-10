@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+require("./main.styl");
  
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(

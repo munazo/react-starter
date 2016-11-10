@@ -1,12 +1,12 @@
 var path = require('path');
  
 var config = {
-  context: path.join(__dirname, 'src'),
+  context: path.join(__dirname, 'src/'),
   entry: [
     './main.js',
   ],
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'public/'),
     filename: 'main.js',
   },
   module: {
@@ -16,6 +16,14 @@ var config = {
         exclude: /node_modules/,
         loaders: ['babel'],
       },
+      { 
+        test: /\.css$/, 
+        loaders: ['style', 'css']
+      },
+      {
+        test: /\.styl$/,
+        loaders: ['style', 'css', 'stylus']
+      },
     ],
   },
   resolveLoader: {
@@ -24,6 +32,7 @@ var config = {
     ],
   },
   resolve: {
+    extensions: ['', '.js', '.css', '.styl'],
     root: [
       path.join(__dirname, 'node_modules'),
     ],
