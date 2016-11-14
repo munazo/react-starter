@@ -5,7 +5,7 @@
   "colors": {
     "expect": "always"
   },
-  "commaSpace": "always",
+  "commaSpace": "true",
   "commentSpace": "always",
   "cssLiteral": "never",
   "depthLimit": 4,
