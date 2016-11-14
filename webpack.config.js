@@ -25,6 +25,12 @@ var config = {
         loaders: ['style', 'css', 'stylus']
       },
     ],
+    preLoaders: [
+      {
+        test: /\.styl$/, 
+        loaders: ['stylint']
+      }
+    ]
   },
   resolveLoader: {
     root: [
@@ -37,5 +43,8 @@ var config = {
       path.join(__dirname, 'node_modules'),
     ],
   },
+  stylint: {
+    config: '.stylintrc'
+  }
 };
 module.exports = config;
