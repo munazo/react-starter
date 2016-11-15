@@ -29,6 +29,11 @@ var config = {
       {
         test: /\.styl$/, 
         loaders: ['stylint']
+      },
+      {
+        test: /\.js$/, 
+        exclude: /node_modules/,
+        loaders: ['eslint']
       }
     ]
   },
@@ -45,6 +50,9 @@ var config = {
   },
   stylint: {
     config: '.stylintrc'
+  },
+  eslint: {
+    configFile: '.eslintrc'
   }
 };
 module.exports = config;
