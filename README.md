@@ -2,24 +2,24 @@
 
 React + Webpack + Babel
 
-## npm commands
+## Commands
 
 ### Install
 
 ```
-$ npm install
+$ yarn install
 ```
 
 ### Run Dev Server
 
 ```
-$ npm run dev
+$ yarn start
 ```
 
 ### Build
 
 ```
-$ npm run build
+$ yarn run build
 ```
 
 ## Settings
