@@ -2,20 +2,28 @@
 
 React + Webpack + Babel
 
-## Setup
+## npm commands
+
+### Install
 
 ```
 $ npm install
 ```
 
-## Build
+### Run Dev Server
+
+```
+$ npm run dev
+```
+
+### Build
 
 ```
 $ npm run build
 ```
 
-## Dev server
+## Settings
 
-```
-$ npm run dev
-```
+### eslint
+
+Refering [Airbnbs' ESLint configuration](https://github.com/airbnb/javascript#variables).
